@@ -8,7 +8,7 @@ def initialize_global_data():
     mydb = mysql.connector.connect(
         host="127.0.0.1",
         user="root",
-        password="Samsungnote10+",
+        password="Password",
         database="products"
     )
     cursor = mydb.cursor()
