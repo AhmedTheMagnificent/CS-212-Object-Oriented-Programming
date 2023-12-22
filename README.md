@@ -12,9 +12,18 @@ Welcome to our Grocery Store Web Application! This application allows users to e
 
 - Checkout Process: A secure checkout process ensures the safety of your personal and payment information.
 
+## Setting Up the Database
+
+This project includes a file named `db.txt` that contains commands for your MySQL database. Follow the steps below to set up the database using MySQL Workbench.
+
+### Prerequisites
+
+- Install MySQL Workbench: [MySQL Workbench Installation Guide](https://dev.mysql.com/doc/workbench/en/wb-installing.html)
+
 ## Getting Started
 
-1. **Clone the Repository:**
+1. Clone the Repository:
    ```bash
    git clone https://github.com/yourusername/grocery-store-web-app.git
    cd grocery-store-web-app
+2. Add the database commands to mySQL workbench and setup your database accordingly and replace the password in server.py with the choice of your own.
