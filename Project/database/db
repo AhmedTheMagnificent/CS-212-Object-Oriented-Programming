@@ -1,0 +1,29 @@
+CREATE DATABASE IF NOT EXISTS inventory;
+USE inventory;
+CREATE TABLE IF NOT EXISTS products (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    category TEXT,
+    quantity INTEGER,
+    image_path TEXT
+);
+INSERT INTO products (id, name, category, quantity, image_path) VALUES
+(1, 'Cabbage', 'Fruits and veges', 5, 'images/pngegg.png'),
+(2, 'Orange', 'Fruits and veges', 6, 'images/pngegg-(1).png'),
+(3, 'Strawberry', 'Fruits and veges', 7, 'images/pngegg-(2).png'),
+(4, 'Pineapple', 'Fruits and veges', 10, 'images/pngegg-(3).png'),
+(5, 'White Bread', 'Bread and sweets', 5, 'images/pngegg (9).png'),
+(6, 'Candy', 'Bread and sweets', 7, 'images/pngegg (10).png'),
+(7, 'Chocolate Cupcake', 'Bread and sweets', 9, 'images/pngegg (11).png'),
+(8, 'Cheesecake', 'Bread and sweets', 10, 'images/pngegg (12).png'),
+(9, 'Monster Energy', 'Soft drinks', 20, 'images/pngegg (13).png'),
+(10, 'Red Bull', 'Soft drinks', 19, 'images/pngegg (14).png'),
+(11, 'Not CocaCola', 'Soft drinks', 1, 'images/pngegg (15).png');
+CREATE TABLE IF NOT EXISTS people (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    email TEXT,
+    address TEXT,
+    city TEXT,
+    postal_code TEXT
+);
